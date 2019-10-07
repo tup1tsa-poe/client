@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+$border: 1px solid #302e2e;
+
+body {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+}
+
+.text-large {
+  font-weight: bold;
+  color: #cec59f;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  font-size: 18px;
+}
+
+.text-normal {
+  font-size: 0.875em;
+  color: #a79070;
+  font-weight: 500;
+  margin-bottom: 0.1875em;
+  font-size: 14px;
+}
+
+.button {
+  user-select: none;
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #111;
+  font-family: inherit;
+  border: 1px solid #444;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #beb698;
+  display: block;
+  font-size: 0.875em;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  height: 2.3125em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+  &:focus {
+    background: #0c0c0c;
+    border-color: #999;
+    outline: none;
+  }
+}
+
+#page-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background: black;
+  #content {
+    max-width: 1000px;
+    background-color: #0f0f0f;
+    border-left: $border;
+    border-right: $border;
+    border-bottom: $border;
+  }
+}

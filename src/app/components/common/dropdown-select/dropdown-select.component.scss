@@ -1,0 +1,54 @@
+.dropdown-select {
+  &-wrapper {
+    width: 100%;
+  }
+  &-container {
+    height: 32px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    color: #aaa;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 212px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    text-decoration: none;
+    white-space: nowrap;
+    height: 2.3125em;
+    border-radius: 0;
+    font-size: 0.875em;
+    line-height: 2.25em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-image: -webkit-gradient(
+      linear,
+      50% 0,
+      50% 100%,
+      color-stop(20%, #eee),
+      color-stop(80%, #fff)
+    );
+    background-image: linear-gradient(#eee 20%, #fff 80%);
+    background: linear-gradient(to bottom, #383838 0, #111 100%);
+    color: #beb698;
+    border: solid 1px #4b4b4b;
+    box-shadow: none;
+    &:hover {
+      color: white;
+    }
+    fa-icon {
+      padding-right: 8px;
+    }
+    span {
+      padding-left: 8px;
+      color: #beb698;
+      font-size: 14px;
+    }
+  }
+  &-dropdown {
+    position: absolute;
+    top: 32px;
+    width: 100%;
+  }
+}
